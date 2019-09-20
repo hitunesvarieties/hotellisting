@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Hotels.com</title>
+</head>
+
+<body>
+    <div class='menu-container'>
+        <div class='menu'>
+
+            <a href="signup.html">
+                <li><button type="button" class="btn btn-warning">Sign up</button></li>
+            </a>
+            <a href="login.html">
+                <li><button type="button" class="btn btn-warning">Log in</button></li>
+            </a>
+        </div>
+    </div>
+    <p>
+        <h1>Hotels.com</h1>
+    </p>
+    <!-- hotel profile -->
+    <button id="profileButton" class="btn btn-primary profileBtn">Profile</button>
+   <div class="container">
+        <div class="myProfile">
+                <p class="profileMsg text-centre"></p>
+                <h2 class="text-centre">Hotel Profile</h2>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="form-group">
+                            <input type="text" name="firstName" placeholder="Hotel Name" id="hotelName" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="form-group">
+                            <input type="text" name="lastName" placeholder="Registered Business Name" id="registeredBusinessName" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="form-group">
+                            <input type="text" name="lastName" placeholder="Hotel Manager's Name" id="hotelManagersName" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="form-group">
+                            <input type="text" name="lastName" placeholder="Contact Number" id="contactNumber" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="form-group">
+                            <input type="text" name="lastName" placeholder=" Registration Number(CAC)" id="registrationNumber" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="form-group">
+                            <input type="text" name="lastName" placeholder="Email Address" id="emailAddress" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="form-group">
+                            <input type="text" name="lastName" placeholder="Facilities Available" id="facilitiesAvailable" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="form-group">
+                            <input type="text" name="lastName" placeholder="Hotel Location" id="hotelLocation" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="form-group">
+                            <input type="text" name="lastName" placeholder="Hotel Nearest Bus-Stop" id="hotelNearestBusStopn" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="form-group">
+                            <input type="text" name="lastName" placeholder="Price Ranges" class="form-control">
+                        </div>
+                    </div>
+                    <div>
+        <button type="button" id="profileSubmitBtn" class="btn btn-success profileSubmitBtn">Submit</button>
+                    </div>
+                </div>
+            </div>
+   </div>
+    <button type="button" id="listProfile" class="btn btn-warning">Profile listing</button>
+    <div>
+        <table class="table table-bordered bg-default">
+            <thead class="thead-dark">
+                <th>s/n</th>
+                <th>Hotel Name</th>
+                <th>Contact Number</th>
+                <th>Email Address</th>
+                <th>Facilities Available</th>
+                <th>Hotel Location</th>
+                <th>Action</th>
+            </thead>
+            <tbody id="profileHistory">
+            </tbody>
+<!-- <tfoot>
+    <tr>
+        <td>id</td>
+        <td>Hotel Name</td>
+        <td>Contact Number</td>
+        <td>Email Address</td>
+        <td>Facilities Available</td>
+        <td>Hotel Location</td>
+        <td>Action</td>
+    </tr>
+    </tfoot> -->
+           
+        </table>
+    </div>
+    <div id='backg' class="backg"></div>
+
+    <div class="parent">
+
+
+        <div class='photo-grid-container'>
+            <div class='photo-grid'>
+                <div class='photo-grid-item first-item'>
+                    <img src='img/three.jpg' />
+                </div>
+                <div class='photo-grid-item'>
+                    <img src='img/two.jpg' />
+                </div>
+                <div class='photo-grid-item'>
+                    <img src='img/one.jpg' />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <footer>Copyright &copy; 2019 Hotel Listing Limited. All Rights Reserved</footer> -->
+    <div class="modal">
+            <div class="container">
+                    <div class="myProfile">
+                            <p class="profileMsg text-centre"></p>
+                            <h2 class="text-centre">Hotel Profile</h2>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="form-group">
+                                        <input type="text" name="firstName" placeholder="Hotel Name" id="hotelName1" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="form-group">
+                                        <input type="text" name="lastName" placeholder="Registered Business Name" id="registeredBusinessName1" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="form-group">
+                                        <input type="text" name="lastName" placeholder="Hotel Manager's Name" id="hotelManagersName1" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="form-group">
+                                        <input type="text" name="lastName" placeholder="Contact Number" id="contactNumber1" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="form-group">
+                                        <input type="text" name="lastName" placeholder=" Registration Number(CAC)" id="registrationNumber1" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="form-group">
+                                        <input type="text" name="lastName" placeholder="Email Address" id="emailAddress1" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="form-group">
+                                        <input type="text" name="lastName" placeholder="Facilities Available" id="facilitiesAvailable1" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="form-group">
+                                        <input type="text" name="lastName" placeholder="Hotel Location" id="hotelLocation1" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="form-group">
+                                        <input type="text" name="lastName" placeholder="Hotel Nearest Bus-Stop" id="hotelNearestBusStop1" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="form-group">
+                                        <input type="text" name="lastName" placeholder="Price Ranges" id="priceRanges1" class=form-control">
+                                    </div>
+                                </div>
+                                <div>
+                    <button type="button" id="profileSubmitBtn" class="btn btn-success profileSubmitBtn">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+               </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="./js/forms.js"></script>
+</body>
+
+</html>
